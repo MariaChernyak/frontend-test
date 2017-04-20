@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Календарь</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="header">
+	<div class="container">
+		<form>
+			<fieldset class = "search">
+				<input  class = "search-button" type="submit" name="submit">
+			<input type="search" name="search" placeholder="Событие, дата или участник">
+			</fieldset>
+			<button id = "create-button" type="button">Добавить</button>
+			<button type="button">Обновить</button>
+		</form>
+	</div>
+</div>	
+<div class="container">
+<div class="navigation">
+	<a class="prev" href="#"></a>
+	<span>Март, 2013</span>
+	<a class="next" href="#"></a>
+	<a class="todayButton" href="#">Сегодня</a>
+</div>
+<table>
+	<thead>
+	<tr>
+		<th>Понедельник, <span class="day">25</span></span></th>
+		<th>Вторник, <span class="day">26</span></th>
+		<th>Среда, <span class="day">27</span></th>
+		<th>Четверг, <span class="day">28</span></th>
+		<th>Пятница, <span class="day">1</span></th>
+		<th class="current">Суббота, <span class="day">2</span></th>
+		<th>Воскресенье, <span class="day">3</span></th>
+	</tr>	
+	</thead>
+	<tbody>
+		<tr>
+			<td><span class="day">4</span></td>
+			<td><span class="day">5</span></td>
+			<td><span class="day">6</span></td>
+			<td class="active"><span class="day">7</span></td>
+			<td><span class="day">8</span></td>
+			<td><span class="day">9</span></td>
+			<td><span class="day">10</span></td>
+		</tr>
+		<tr>
+			<td><span class="day">11</span></td>
+			<td class="action"><span class="day">12</span>
+			<p class = "event">Событие</p>
+			<p class="partner">Василий Пупкин, Иван Петров</p></td>
+			<td><span class="day">13</span></td>
+			<td><span class="day">14</span></td>
+			<td><span class="day">15</span></td>
+			<td><span class="day">16</span></td>
+			<td><span class="day">17</span></td>
+		</tr>
+		<tr>
+			<td><span class="day">18</span></td>
+			<td><span class="day">19</span></td>
+			<td><span class="day">20</span></td>
+			<td><span class="day">21</span></td>
+			<td><span class="day">22</span></td>
+			<td><span class="day">23</span></td>
+			<td><span class="day">24</span></td>
+		</tr>
+		<tr>
+			<td><span class="day">25</span></td>
+			<td><span class="day">26</span></td>
+			<td><span class="day">27</span></td>
+			<td><span class="day">28</span></td>
+			<td><span class="day">29</span></td>
+			<td><span class="day">30</span></td>
+			<td><span class="day">31</span></td>
+		</tr>
+	</tbody>
+</table>
+<form id="create-form" class=" form create-form">
+	<input type="text" name="text" placeholder="15 марта, 14.00, День рождения">
+	<button type="submit">Создать</button>
+	<a class = "close" href="#">&times;</a>
+</form>
+<form class=" form edit-form">
+	<input type="text" name="text" placeholder="15 марта, 14.00, День рождения">
+	<button type="submit">Создать</button>
+	<a class = "close" href="#" role="button">&times;</a>
+</form>
+</div>
+
+<script src = "js/script.js"></script>
+</body>
+</html>
