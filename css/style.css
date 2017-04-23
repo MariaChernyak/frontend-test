@@ -54,18 +54,26 @@ form{
 	padding: 20px;
 	background-color: white;
 	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+	display: none;
 }
-.form input{
+.form input, .form textarea{
 	width: 260px;
 	border: none;
 	border-radius: 2px;
 	margin-bottom: 10px;
 	box-shadow: 0 0 4px rgba(0,0,0,0.3) inset;
-	padding: 2px 8px;
+	padding: 10px;
 	font-size: 12px;
+}
+.form textarea{
+	resize: none;
+	height: 115px;
+	margin-top: 25px;
+}
+.form input{
 	height: 25px;
 }
-.form input::-webkit-input-placeholder{
+.form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder{
 	color: #d3d3d3;
 	font-size: 12px;
 }
@@ -77,6 +85,7 @@ form{
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 0 -7px 5px rgba(0,0,0,0.1) inset;
+	margin-right: 10px;
 }
 .form .close{
 	position: absolute;
