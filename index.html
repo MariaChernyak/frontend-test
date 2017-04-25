@@ -14,7 +14,7 @@
 			<input type="search" name="search" placeholder="Событие, дата или участник">
 			</fieldset>
 			<button id = "create-button" type="button">Добавить</button>
-			<button type="button">Обновить</button>
+			<button id="refresh" type="button">Обновить</button>
 		</form>
 	</div>
 </div>	
@@ -42,16 +42,16 @@
 			<td class="day"><span class="date">4</span></td>
 			<td class="day"><span class="date">5</span></td>
 			<td class="day"><span class="date">6</span></td>
-			<td class="day active"><span class="date">7</span></td>
+			<td class="day"><span class="date">7</span></td>
 			<td class="day"><span class="date">8</span></td>
 			<td class="day"><span class="date">9</span></td>
 			<td class="day"><span class="date">10</span></td>
 		</tr>
 		<tr>
 			<td class="day"><span class="date">11</span></td>
-			<td class="day action"><span class="date">12</span>
-			<div><p class = "event">Событие</p>
-			<p class="partner">Василий Пупкин, Иван Петров</p></div>
+			<td class="day"><span class="date">12</span>
+			<!-- <div><p class = "event">Событие</p>
+			<p class="partner">Василий Пупкин, Иван Петров</p></div> -->
 			</td>
 			<td class="day"><span class="date">13</span></td>
 			<td class="day"><span class="date">14</span></td>
@@ -88,9 +88,9 @@
 	<input class="event" type="text" name="text" placeholder="Событие">
 	<input class="date" type="text" name="text" placeholder="День, месяц, год">
 	<input class="partner" type="text" name="text" placeholder="Имена участников">
-	<textarea placeholder="Описание"></textarea>
+	<textarea class="description" placeholder="Описание"></textarea>
 	<button class="submit" type="button">Создать</button>
-	<button type="button">Удалить</button>
+	<button class="delete" type="button">Удалить</button>
 	<a class = "close" href="#" role="button">&times;</a>
 </form>
 </div>
